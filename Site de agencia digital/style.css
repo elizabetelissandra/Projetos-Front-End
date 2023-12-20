@@ -279,7 +279,7 @@ main {
     margin-bottom: 1em;
 }
 
-.valoresempresa {  
+.valoresempresa {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -287,15 +287,16 @@ main {
     gap: 2em 10em;
     grid-auto-flow: row;
     grid-template-areas:
-      "card1 card2"
-      "card3 card4";
-      justify-items: center; 
-      width: 52em; 
-      height: 35em; 
-      margin: auto;
-      margin-top: 2em;
-      margin-bottom: 12em;
-  }
+        "card1 card2"
+        "card3 card4";
+    justify-items: center;
+    width: 52em;
+    height: 35em;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 12em;
+}
+
 .container6 {
     display: flex;
     align-items: flex-start;
@@ -304,7 +305,7 @@ main {
     margin: 1.0em;
 }
 
-.card img{
+.card img {
     gap: 2em;
     padding: 2em;
     background-color: rgba(255, 255, 255, 1);
@@ -313,16 +314,16 @@ main {
     background: linear-gradient(180deg, rgba(158, 255, 0, 0.2) 22.41%, rgba(158, 255, 0, 0) 68.71%);
 }
 
-.card h3{
+.card h3 {
     padding-bottom: .8em;
 }
 
-.card p{
+.card p {
     line-height: 2em;
     text-align: left;
 }
 
-.container7{
+.container7 {
     text-align: center;
     background-color: #154e04d9;
     background-blend-mode: multiply;
@@ -336,67 +337,69 @@ main {
     justify-content: center;
 }
 
-.container7 h3{
+.container7 h3 {
     font-size: 2em;
     margin-bottom: 1em;
 }
 
-#testimonials{
-    display: grid; 
+#testimonials {
+    display: grid;
     justify-items: stretch;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      ". ."
-      ". ."
-      ". ."; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". ."
+        ". ."
+        ". .";
 }
 
-.testemunhas{
+.testemunhas {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    width: 40em; 
-    height: 20em; 
+    width: 40em;
+    height: 20em;
     margin-top: 10em;
     margin-left: 10em;
 }
 
-.testemunhas h3{
+.testemunhas h3 {
     color: #D8FF99;
     font-size: 1.5em;
 }
 
-.testemunhas p{
+.testemunhas p {
     margin-top: 2em;
     line-height: 1.6;
 }
 
-.infotestemunhas{
+.infotestemunhas {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color:#262626;
+    background-color: #262626;
     margin: 1em;
     margin-top: 2em;
     margin-bottom: 5em;
-    padding-left:2em;
-    padding-top:2em;
+    padding-left: 2em;
+    padding-top: 2em;
     padding-bottom: 2em;
     padding-right: 2em;
     border-radius: 2em;
 }
 
-.infotestemunhas img{
+.infotestemunhas img {
     margin-right: 1em;
 }
-.infotestemunhas span{
+
+.infotestemunhas span {
     margin-left: 1em;
     margin-right: 1em;
 }
-.infotestemunhas button{
+
+.infotestemunhas button {
     background-color: #111010;
     color: white;
     border: none;
@@ -406,7 +409,8 @@ main {
     padding: 0.7em;
     border-radius: 0.5em;
 }
-.perguntas{
+
+.perguntas {
     text-align: center;
     background-color: #154e04d9;
     background-blend-mode: multiply;
@@ -416,34 +420,37 @@ main {
     background-position: 50% 50%;
     height: 25em;
 
-    
+
 }
 
-.faq h3{
+.faq h3 {
     font-size: 2em;
     margin-top: 4.5em;
     margin-bottom: 1em;
 }
 
-.container8{
-    display: grid; 
-  grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr 1fr; 
-  gap: 0px 0px; 
-  grid-template-areas: 
-    ". ."
-    ". ."
-    ". ."
-    ". ."; 
-    margin-top: 10em; 
-  background-color: #1a1a1a;
+.container8 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". ."
+        ". ."
+        ". ."
+        ". .";
+    margin-top: 10em;
+    background-color: #1a1a1a;
 }
-.duvidas{
+
+.duvidas {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
 }
-.duvidas span{
+
+.duvidas span {
     background-color: #111010;
     color: azure;
     font-size: 2em;
@@ -452,20 +459,24 @@ main {
 }
 
 #botao{
-    background-color: transparent;
-    color:white;
-    border:none;
+    background-color: #111010;
+    color: white;
+    border: none;
     font-size: 3em;
-    margin-top: -2.3em;
-    margin-left: 0.8em
-
+    margin-left: 0.8em;
+    cursor: pointer;
 }
+
 .textoescondido {
-    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Transição de opacidade por 0.5 segundos */
   }
   
   .texto-visivel {
-    display: block;
     opacity: 1;
-    z-index: 1;
+    transition: opacity 0.5s ease-in-out;
   }
+
+
+
+
