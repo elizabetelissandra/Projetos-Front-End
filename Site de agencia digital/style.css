@@ -344,10 +344,11 @@ main {
 
 #testimonials {
     display: grid;
-    justify-items: stretch;
+    justify-items: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
+    margin: 5em;
     grid-template-areas:
         ". ."
         ". ."
@@ -358,11 +359,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-    width: 40em;
-    height: 20em;
-    margin-top: 10em;
-    margin-left: 10em;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 60vw;
+    height: 100%;   
 }
 
 .testemunhas h3 {
@@ -423,60 +423,99 @@ main {
 
 }
 
-.faq h3 {
+.faq1 h3 {
     font-size: 2em;
-    margin-top: 4.5em;
     margin-bottom: 1em;
+    margin-top: 4.5em;
 }
 
-.container8 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        ". ."
-        ". ."
-        ". ."
-        ". .";
-    margin-top: 10em;
-    background-color: #1a1a1a;
+.per{
+    min-height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-.duvidas {
+.faq{
+    max-width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #9EFF00;
+    cursor: pointer;
+}
+.question {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
+}
+.question h3{
+    font-size: 1.5rem;
 }
 
-.duvidas span {
-    background-color: #111010;
-    color: azure;
-    font-size: 2em;
-    padding: 1em;
-    border-radius: 1em;
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s;
 }
 
-#botao{
-    background-color: #111010;
-    color: white;
-    border: none;
-    font-size: 3em;
-    margin-left: 0.8em;
-    cursor: pointer;
+.answer p{
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.4rem;
+    margin-left: 0.2em;
+
 }
 
-.textoescondido {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out; /* Transição de opacidade por 0.5 segundos */
-  }
-  
-  .texto-visivel {
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-  }
+.faq.active .answer{
+    max-height: 18.75em;
+    animation: fade 1s ease-in-out;
+}
 
+.faq.active svg{
+    transform: rotate(180deg);
+}
 
+svg{
+    transition: transform .5s ease-in
+    ;
+}
 
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: translate(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(-10px);
+    }
+}
 
+.container8{
+    text-align: center;
+    background-color: #154e04d9;
+    background-blend-mode: multiply;
+    background-image: url(./Imagens/Artboard\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container8 h3{
+    font-size: 1.5em;
+}
+
+.container8 p{
+    width: 60%;
+}
+
+.container9{
+    display: flex;
+}
