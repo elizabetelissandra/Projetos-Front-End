@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #fff;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+    background: #DC3816;
+    background: radial-gradient(at left bottom, #DC3816, #CF30BF);
+    width: max-content;
+    padding: 0% 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+
+.cem{
+    font-size: 9em;
+    color: rgb(26, 192, 197);
+    position: relative;
+    right: .01em;
+    
+}
+.cem span{
+    color: rgb(94, 94, 94);
+    position: relative;
+    left: .20em;
+    
+}
+.days{
+    
+}
