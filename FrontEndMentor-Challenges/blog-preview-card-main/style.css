@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(221, 197, 38);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.cardpai{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    background-color: white;
+    -webkit-box-shadow: 6px 5px 0px 8px #000000; 
+    box-shadow: 6px 5px 0px 8px #000000;-webkit-border-radius: 17px 17px 17px 17px;
+    -moz-border-radius: 17px 17px 17px 17px;
+    border-radius: 17px 17px 17px 17px;
+    width: 50%;
+    gap: 0.5em;
+    }
+
+.design{
+    width: 18em;
+    margin: 1em auto;
+}
+
+.target{
+    font-size: 0.8em;
+    font-weight: bold;
+    background-color: rgb(227, 192, 76);
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+.card h2{
+    text-align: left;
+    font-size: 0.8em;
+    
+}
+.card h1{
+    text-align:left;
+    font-size: 1.5em;
+    margin: 0.2em 1.2em;
+}
+
+.card p{
+    line-height: 1.6em;
+    color: grey;
+    margin: 0.5em 2em;
+    text-align: left;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.footer img{
+    height: 2em;
+    float: left;
+    margin-bottom: 1em;
+}
+
+.footer span{
+    font-weight: bold;
+    text-align: left;
+    margin-left: 1em;
+    margin-bottom: 0.8em;
+}
