@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,600;0,800;1,400&family=Open+Sans:wght@400;500;600;700;800&display=swap');
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Figtree', sans-serif;
 }
 
 body{
@@ -33,6 +35,7 @@ body{
 .design{
     width: 18em;
     margin: 1em auto;
+    border-radius: 1em;
 }
 
 .target{
@@ -76,3 +79,41 @@ body{
     margin-left: 1em;
     margin-bottom: 0.8em;
 }
+
+@media only screen and (max-width: 767px)
+    { 
+        /* styles for screens larger than 767px */
+        .body{    
+    }
+        .cardpai{
+            display: block;
+        }
+        .card{
+            width: 80%;
+            margin-left: 7%;
+        }
+        .design{
+            width: 90%;
+            border-radius: 0.5em;
+        }
+        .target{
+            font-size: 0.5em;
+        }
+        .card h2{
+            font-size: 0.6em;
+        }
+        .card h1{
+            font-size: 1em;
+        }
+        .card p{
+            font-size: 0.7em;
+        }
+        .footer img{
+            width: 15%;
+            height: 15%;
+        }
+        .footer span{
+            font-size: 0.6em;
+            margin-bottom: 1.5em;
+        }
+    }
