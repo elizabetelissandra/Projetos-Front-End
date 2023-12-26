@@ -190,154 +190,24 @@ section{
     }
 }
 
-@media only screen 
-   and (max-width : 768px) {
+@media screen 
+   and (max-width: 767px) {
     section{
-    display: block;
-    width: 300vw;
-    height: 35em;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+     width: 100vw;
+    height: 100%;
     }
     .seuresultado{
-        height: calc(100vw - 60px)
+        width:97%;
     }
+    
    .seuresultado h2{
         font-size: 0.8em;
-        color: rgb(201, 200, 200);
-        
-    }
-   .classificacao{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 7em;
-        height: 7em;
-        margin: 1.2em auto;
-        border-radius: 50%;
-        background: rgb(46,22,130);
-        background: linear-gradient(183deg, rgba(46,22,130,1) 0%, rgba(71,52,240,1) 100%);
-    }
-    .classificacao span{
-    font-size: 2.8em;
-    font-weight: bold;
-    line-height: 1.5em;
-    
-    }
-    .classificacao p{
-        font-size: 0.6em;
-        color: rgb(118, 113, 197);
-        font-weight: 900;
-        line-height: 1.5em;        
-    }
-    .seuresultado h3{
-        font-size: 0.9em;
-    }
-
-    .seuresultado p{
-        color: rgb(180, 179, 195);
-        font-weight: bold;
-        font-size: 0.7em;
-        line-height: 1.5em;
-        margin: 0 3em;
-    }
-
+        color: rgb(201, 200, 200);    
+    } 
     .sumario{
-        text-align: start;
-        line-height: 2em;
-        width: calc(96vw - 20px);
-        height: 100vw;
-        
-
-    }
-    .divisoes span{
-        font-weight: bold;
-        font-size: 0.9em;
-    }
-    .status{
-        width: 90%;
-        display: flex;
-        justify-content:space-between;
-        align-items:normal;
-        margin: 1em 0;
-    }
-    .reaction{
-        color:#f16360;
-        display: flex;
-        gap: 0.5em;
-        
-        
-        
-    }
-    .status1{
-        background-color: #fff6f5;
-        padding: 0 0.5em;
-        border-radius: 0.5em;
-        font-size: 0.8em;
-        
-
-    }
-
-    .icones{
-        width: 1.2em;
-
-    }
-
-    .status2{
-        background-color: #fffbf2;
-        padding: 0 0.5em;
-        border-radius: 0.5em;
-        font-size: 0.8em;
-    }
-    .memory{
-        color:rgb(238, 182, 75);
-        display: flex;
-        gap: 0.8em;
-    }
-    .status3{
-        background-color: rgb(242, 250, 250);
-        padding: 0 0.5em;
-        border-radius: 0.5em;
-        font-size: 0.8em;
-    }
-    .verbal{
-        color:#42b095;
-        display: flex;
-        gap: 0.8em;
-    }
-    .status4{
-        background-color:#f3f3fd;
-        padding: 0 0.5em;
-        border-radius: 0.5em;
-        font-size: 0.8em;
-    }
-    .visual{
-        color:#1e247a;
-        display: flex;
-        gap: 0.8em;
-    }
-    .valor{
-        font-size: 1.2em;
-        font-weight: bold;
-    }
-    .total{
-        font-size: 1em;
-        color: rgb(158, 156, 156);
-        font-weight: bold;
-    }
-    button{
-        background-color: black;
-        color:white;
-        text-align: ;
-        padding: 1em 5em;
-        margin:1em auto;
-        border: none;
-        border-radius: 2em;
-        width: 90%;
-        font-weight: bold;
-    }
-    button:hover{
-        background: rgb(46,22,130);
-        background: linear-gradient(0deg, rgba(46,22,130,1) 0%, rgba(71,52,240,1) 100%);
+        width:97%;
     }
 }
