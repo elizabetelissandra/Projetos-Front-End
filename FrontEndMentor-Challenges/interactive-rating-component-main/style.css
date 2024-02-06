@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*{
+    font-family: 'Overpass', sans-serif;
+}
+
+body{
+    background-color: hsl(216, 12%, 8%);
+}
+
+.class-centro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+    width: 600px;
+    background-image: linear-gradient(to right top, #171e28, #192029, #1a212b, #1c232c, #1e252e);
+    border-radius: 15px;
+    padding: 3em;
+}
+
+.class-centro h2{
+    color: white;
+}
+
+.class-centro img{
+    width: 25px;
+    border: 20px solid #272e38;
+    border-radius: 3em;
+}
+
+.class-centro p{
+    font-size: 15px;
+    color: hsl(217, 12%, 63%);
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    background-color: hsl(25, 97%, 53%);
+    padding: 0.8em;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 2em;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+button:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}

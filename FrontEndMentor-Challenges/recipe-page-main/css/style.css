@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;   
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    background-color: antiquewhite;
+}
+.corpo-receita{
+    background-color: white;
+    max-width: 80em;
+    width: 50%;
+    margin: auto;
+    border-radius: 2rem;
+    box-shadow: 0px 3px 6px rgba(0,0,
+    0,.1);
+    text-align: justify;
+    line-height: 1.5;
+    color: #333;
+    padding: 2em;
+
+    img{
+        width: 90%;
+        margin: auto 2em;
+        padding-bottom: 2em;
+        border-radius: 1.5rem;
+    }
+    h1{
+        font-family: "Young Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px;
+        }
+    p{
+        font-size: 15px;
+        padding: 1.5em 0;
+    }    
+}
+
+.ingredientes{
+    padding: 2em;
+    background-color: #fff7fc;
+    border-radius: 15px;
+
+    h3{
+        color:darkmagenta;
+        font-weight: 600;
+        padding-bottom: 0.5em;
+    }
+    ul{
+        padding-left:1.5em;
+        font-size: 15px;
+    }
+    li span{
+        font-weight: bold;
+    }
+}
+
+  
