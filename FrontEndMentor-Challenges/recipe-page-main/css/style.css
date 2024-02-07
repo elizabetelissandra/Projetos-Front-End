@@ -10,25 +10,29 @@
 }
 body{
     background-color: antiquewhite;
+    margin: 2em;
 }
 .corpo-receita{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     background-color: white;
-    max-width: 80em;
-    width: 50%;
-    margin: auto;
+    max-width: 90em;
+    width: 60%;
+    margin:auto;
     border-radius: 2rem;
     box-shadow: 0px 3px 6px rgba(0,0,
     0,.1);
     text-align: justify;
     line-height: 1.5;
     color: #333;
-    padding: 2em;
+    padding: 0 2.5em;
 
     img{
+        margin: 1.5em;
         width: 90%;
-        margin: auto 2em;
-        padding-bottom: 2em;
-        border-radius: 1.5rem;
+        border-radius: 1.5em;
     }
     h1{
         font-family: "Young Serif", serif;
@@ -43,6 +47,7 @@ body{
 }
 
 .ingredientes{
+    
     padding: 2em;
     background-color: #fff7fc;
     border-radius: 15px;
@@ -59,6 +64,56 @@ body{
     li span{
         font-weight: bold;
     }
+    
 }
-
-  
+.modo-de-preparacao{
+    h2{
+        font-family: "Young Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #934f3e;
+        margin-top: 1em;
+    }
+    ul{
+        padding: 2em;
+        line-height: 2em;
+    }
+    
+}
+.instrucoes{
+    h2{
+        font-family: "Young Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #934f3e;
+        margin-top: 1em;
+    }
+    ol{
+        padding: 2em;
+        line-height: 2em;
+    }
+    li span{
+        font-weight: bold;
+    }
+}  
+.nutritional{
+    padding-bottom: 2em;
+    h2{
+        font-family: "Young Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #934f3e;
+        margin-top: 1em;
+    }
+    div{
+        display: flex;
+        justify-content: space-between;        
+    }
+    hr{
+        margin: 0.5em 0;
+    }
+    .carbs{
+        color: #934f3e;
+        font-weight: bold;
+    }
+}
