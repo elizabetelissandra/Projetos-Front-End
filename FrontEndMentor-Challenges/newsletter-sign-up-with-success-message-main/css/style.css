@@ -1,0 +1,146 @@
+@font-face {
+    font-family: Roboto-bold;
+    src: url(../assets/fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: Roboto-regular;
+    src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto-regular;
+}
+
+body {
+    background-color: rgb(100, 96, 100);
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:10% auto;
+}
+
+.sing-up {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    padding: 2em;
+    max-width: 60em;
+    height: 80%;
+    border-radius: 35px;
+
+
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 0 3em;
+    width: 50%;
+    text-align: left;
+
+
+    h1 {
+        font-family: Roboto-bold;
+        font-size: 65px;
+    }
+
+    .frase-p {
+        padding: 1em 0;
+        font-size: 20px
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        padding-bottom: 1em;
+    }
+
+    li p {
+        font-size: 18px;
+    }
+
+    i {
+        color: orangered;
+        padding-right: 1em;
+        font-size: 20px;
+    }
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 2em;
+
+    label {
+        font-size: 12px;
+        font-family: Roboto-bold;
+
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    input {
+        padding: 1.5em;
+        border-radius: 10px;
+        border: 1px solid rgb(179, 178, 178);
+        outline: none;
+
+        input:-ms-input-placeholder {
+            color: rgb(179, 178, 178);
+        }
+
+    }
+    .certoEmail{
+        background-color: #ffe8e6;
+        border: 1px solid #56e71d;
+    }
+    .erroEmail {
+        background-color: #f1f1f1;
+        border: 1px solid #e01c0a;
+    }
+
+    .erro {
+        display: none;
+        color: #d16e83;
+        font-family: Roboto-bold;
+        font-size: 12px;
+    }
+
+    button {
+        padding: 1em;
+        margin-top: 1em;
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+        font-family: Roboto-bold;
+        font-size: 18px;
+    }
+
+    button:hover {
+        background: rgb(255, 104, 65);
+        background: linear-gradient(265deg, rgba(255, 104, 65, 1) 0%, rgba(255, 83, 119, 1) 100%);
+        outline: none;
+        border: none;
+        box-shadow: 10px 10px 58px -6px rgba(255, 104, 65, 1);
+    }
+}
+

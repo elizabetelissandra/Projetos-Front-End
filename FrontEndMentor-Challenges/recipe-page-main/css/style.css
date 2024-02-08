@@ -15,7 +15,7 @@ body{
 .corpo-receita{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: space-around;
     background-color: white;
     max-width: 90em;
