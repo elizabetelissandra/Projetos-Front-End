@@ -14,20 +14,20 @@
 </head>
 <body>
   <main id="app">
-  <div >
+  <div>
     <form id="formulario" class="dataNascimento">
       <div class="inputData">
         <label for="dia">Day</label><br>
-        <input type="number" id="dia" name="dia" placeholder="DD">
+        <input type="number" max="31" min="1" id="dia" name="dia" value="01" placeholder="DD" required>
       </div> 
       <div class="inputData"> 
         <label for="mes">Month</label><br>
-        <input type="number"  id="mes" name="mes" placeholder="MM">
+        <input type="number" max="12" min="1"  id="mes" name="mes" placeholder="MM" value="01" required>
       </div>  
       <div class="inputData">
         <label for="ano">Year</label><br>
-        <input type="number" placeholder="YYYY"
-        id="ano" name="ano"/>
+        <input type="number" max="2024" min="0" placeholder="YYYY"
+        id="ano" name="ano" value="0001" required/>
       </div>
       <button type="submit"><img src="./assets/images/icon-arrow.svg" alt="arco para baixo"></button>
     </form>

@@ -29,24 +29,24 @@ body {
 
 .dataNascimento {
     display: flex;
-    gap: 2em;
-
+    /* gap: 2em; */
     button {
         position: relative;
-        top: 5.8em;
-        left: 2em;
-        width: 25%;
-        padding: 1em;
-        border-radius: 60%/60%;
-        outline: none;
-        background-color: hsl(259, 100%, 65%);
-        border: 1px solid hsl(259, 100%, 65%);
-        cursor: pointer;
-        transition: .4s ease all;
+    top: 5.8em;
+    left: 2em;
+    width: 25%;
+    padding: 1em;
+    border-radius: 60%/60%;
+    outline: none;
+    background-color: hsl(259, 100%, 65%);
+    border: 1px solid hsl(259, 100%, 65%);
+    cursor: pointer;
+    transition: .4s ease all;
 
-        &:hover {
+        &:
+    hover {
             background-color: black;
-            color: #fff;
+    color: #fff;
         }
     }
 }
@@ -78,10 +78,15 @@ body {
         font-weight: 600;
         font-size: 32px;
         color: #7c7c7c;
-
     }
+    
 }
-
+input:valid{
+    border: 2px hsl(0, 0%, 86%) solid;
+}
+input:invalid{
+    border: 2px rgb(209, 28, 28) solid;
+}
 hr {
     margin-top: 2em;
     color: rgb(215, 213, 213);
@@ -94,12 +99,13 @@ hr {
     margin-top: 2em;
 
 }
-.resultado{
+
+.resultado {
     font-size: 5em;
     font-weight: 600;
     font-style: italic;
 
-    span{
+    span {
         color: hsl(259, 100%, 65%);
     }
 }
@@ -111,4 +117,71 @@ hr {
     a {
         color: hsl(228, 45%, 44%);
     }
+}
+
+@media screen and (max-width: 375px) {
+    #app {
+        width: 95vw;
+        margin: 20% auto;
+        padding: 0;
+
+        div{
+            padding: 0;
+        }
+    }
+
+    .dataNascimento {
+        margin: 0;
+        padding: 0;
+        gap: 0;
+        margin-top: 1em;
+        padding: 0.5em;
+
+        .inputData {
+            margin: 0;
+            padding: 0;
+
+            label {
+                font-size: 10px;
+            }
+
+            input {
+                padding: 0.3em;
+                width: 80%;
+                font-size: 22px;
+            }
+
+            input::placeholder {
+                font-size: 12px;
+                width: 100vw;
+            }
+        
+        }
+        
+        button{
+            position: absolute;
+            top: 17em;
+            left: 11.5em;
+            width: 20%;
+            height: 10%;
+            border-radius: 60%/60%;
+
+            img{
+                width: 30px;
+            }
+        }
+    }
+
+    hr {
+        width: 90%;
+        margin: 5em auto 2em auto;
+    }
+    .resultadoIdade{
+        margin: 1.5em;
+
+        .resultado{
+            font-size: 50px;
+        }
+    }
+
 }
