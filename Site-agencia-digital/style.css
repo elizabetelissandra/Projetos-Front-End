@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #111010;
+    background-color: #000000;
     font-family: 'Barlow', sans-serif;
     color: aliceblue
 }
@@ -359,7 +359,7 @@ main {
     margin-bottom: 1em;
 }
 
-#testimonials {
+/* #testimonials {
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr 1fr;
@@ -370,7 +370,7 @@ main {
         ". ."
         ". ."
         ". .";
-}
+} */
 
 .testemunhas {
     display: flex;
